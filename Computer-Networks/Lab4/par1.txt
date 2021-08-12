@@ -1,0 +1,22 @@
+C:\>ipconfig /all
+C:\>ping 10.10.1.18
+R1>show ip interface brief
+R1>show ip route
+R2(config)#interface s0/0/0
+R2(config-if)#ip address 10.10.1.5 255.255.255.252
+
+R2(config-if)#no shutdown
+C:\>ping 10.10.1.18
+C:\>ping 10.10.1.98
+
+C:\>ipv6config /all
+C:\>ipv6config /all
+
+C:\>ping 2001:db8:1:4::2
+C:\>ping 2001:db8:1:1::2
+
+tracert 2001:db8:1:3::2
+R3>show ipv6 interface brief
+
+C:\>ping 2001:db8:1:4::2
+C:\>ping 2001:db8:1:1::2
